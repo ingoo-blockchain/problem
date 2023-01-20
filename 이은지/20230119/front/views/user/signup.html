@@ -1,0 +1,68 @@
+{% extends 'layout/layout.html' %} {% block content %}
+<h2>SignUp Page</h2>
+<form method="post" action="/user/signup">
+  <table>
+    <h3>필수사항</h3>
+    <tr>
+      <th>ID :</th>
+      <td><input type="text" name="userId" id="userid" placeholder="아이디" required /></td>
+    </tr>
+
+    <tr>
+      <th>PW :</th>
+      <td><input type="password" name="userPw" id="userpw" placeholder="비밀번호" required /></td>
+    </tr>
+
+    <tr>
+      <th>NAME :</th>
+      <td><input type="text" name="userName" id="username" placeholder="홍길동" required /></td>
+    </tr>
+
+    <tr>
+      <th>BIRTH :</th>
+      <td><input type="date" name="userBirth" /></td>
+    </tr>
+
+    <tr>
+      <th>GENDER :</th>
+      <td><input type="radio" name="userGender" id="genderM" value="남자" checked /><label>남자</label> <input type="radio" name="userGender" id="genderF" value="여자" /><label>여자</label></td>
+    </tr>
+
+    <tr>
+      <th>PHONE :</th>
+      <td><input type="tel" id="phone" name="userPhone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" maxlength="13" placeholder="010-1234-1234" required /></td>
+    </tr>
+
+    <tr>
+      <th>ADDRESS :</th>
+      <td><input type="address" id="address" name="userAddress" required /></td>
+    </tr>
+  </table>
+  <br />
+  <table>
+    <h3>선택사항</h3>
+    <tr>
+      <th>E-MAIL :</th>
+      <td>
+        <input type="email" id="email" placeholder="example@email.com" />
+      </td>
+    </tr>
+
+    <tr>
+      <th>SNS ID :</th>
+      <td>
+        <select name="snsId" id="snsid">
+          123
+          <option value="none" selected>-- 선택 --</option>
+          <option value="twitter">twitter</option>
+          <option value="instagram">instagram</option>
+          <option value="facebook">facebook</option>
+        </select>
+        <input type="text" name="snsId" id="snsId" placeholder="SNS 아이디" />
+      </td>
+    </tr>
+  </table>
+  <button type="submit">회원가입</button>
+</form>
+
+{% endblock %}
