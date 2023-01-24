@@ -1,0 +1,24 @@
+{% extends 'layout/layout.html' %} {% block content %}
+<h2>Login Page</h2>
+<div id="wrap">
+  <div id="login">
+    <form name="loginfrm" id="loginfrm">
+      <input type="text" name="userId" placeholder="아이디" />
+      <input type="password" name="userPw" placeholder="비밀번호" />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <br />
+
+  <div id="signup">
+    <div>
+      아직 회원이 아니세요?<br />
+      단 세 줄이면 됩니다.<br />
+    </div>
+    <button type="button" onclick="location.href='/user/signup';">회원가입</button>
+  </div>
+</div>
+<script type="text/javascript" src="/js/lib/request.js"></script>
+<script type="text/javascript" src="/js/module/login.js"></script>
+{% endblock %}
