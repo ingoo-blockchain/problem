@@ -1,0 +1,16 @@
+{% extends 'layout/layout.html'%} {% block content %}
+<div id="welcomeWrap" class="w120">
+    <h2>{{nickname}}님 환영합니다.</h2>
+    <br /><br />
+    <br /><br />
+    <div>
+        가입 정보를 확인해주세요.<br /><br />
+        ID : {{userid}} <br /><br />
+        NAME : {{username}} <br /><br />
+        NICKNAME : {{nickname}}
+    </div>
+    <br /><br />
+    <br /><br />
+    <a href="/">메인페이지 이동</a>
+</div>
+{% endblock %}

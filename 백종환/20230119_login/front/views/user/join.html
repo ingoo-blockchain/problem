@@ -1,0 +1,40 @@
+{% extends 'layout/layout.html'%}
+{% block content %}
+<form action="/users" method="post" id="joinForm" class="w60 center">
+    <div>
+        <span>아이디</span><br>
+        <div id="idBox" class="bwflex">
+            <span id="checkId"></span>
+            <input type="text" class=".btnpadding" id="userid" name="userid" >
+        </div>
+    </div>
+    <div>
+        <span>패스워드</span><br>
+        <input type="password" class=".btnpadding" name="userpw" >
+    </div>
+    <div>
+        <span>이름</span><br>
+        <input type="text" class=".btnpadding" name="username">
+    </div>
+    <div>
+        <span>닉네임</span><br>
+        <div id="idBox" class="bwflex">
+            <span id="checkNick"></span>
+            <input type="text" class=".btnpadding" name="nickname" id="nickname">
+        </div>
+    </div>
+    <div>
+        <span>생년월일</span><br>
+        <input type="date" id="birth" name="birth" min="1900-01-01" max="2023-03-01" class=".btnpadding" style="text-align: center; font-size: 1.8rem;">
+    </div>
+    <div>
+        <span>휴대폰 번호</span><br>
+        <input type="text" class=".btnpadding" name="phonenum" placeholder="하이픈을 포함하여 적어주세요"
+        pattern="[0-9]{3}-[0-9]{3}{4}-[0-9]{4}">
+    </div>
+    <div>
+        <button type="submit" style="height:3.5rem;">가입하기</button>
+    </div>
+</form>
+<script src="/js/index.js" type="text/javascript"></script>
+{% endblock %}

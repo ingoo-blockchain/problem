@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 90vw;
+}
+#logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+h1 > a {
+    font-size: 10rem;
+    text-align: center;
+}
+.bwflex {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.btnpadding {
+    padding: 0 14px;
+}
+#gnbBtn > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 5rem;
+    font-size: 2rem;
+}
+#user {
+    width: 100%;
+    height: 2rem;
+}
+#user > span {
+    float: right;
+    width: 15rem;
+    font-size: 1.8rem;
+}
+
+#readme {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 120rem;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+#readme > h1 {
+    margin-bottom: 2rem;
+}
+table {
+    width: 60rem;
+}
+
+#joinForm > div {
+    margin: 0 auto;
+    width: 35rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+#joinForm > div > input {
+    width: 70%;
+    height: 3rem;
+}
+#joinForm > div > span {
+    font-size: 2rem;
+}
+#joinForm > div > input {
+    margin-left: 10rem;
+    padding: 0 1.4rem;
+}
+#userid {
+    width: 70%;
+    height: 3rem;
+    margin-right: 0.5rem;
+    padding: 0 1.4rem;
+}
+#nickname {
+    width: 70%;
+    height: 3rem;
+    margin-right: 0.5rem;
+    padding: 0 1.4rem;
+}
+#idBox > span {
+    margin-right: 3rem;
+    font-size: 2.5rem;
+    width: 3rem;
+}
+.w60 {
+    width: 60rem;
+    margin: 0 auto;
+}
+.w120 {
+    width: 120rem;
+    margin: 0 auto;
+}
+.center {
+    margin: 0 auto;
+}
+#joinForm > div:nth-child(1),
+div > button {
+    margin-top: 4rem;
+}
+
+#welcomeWrap,
+#loginWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+#loginfrm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 25rem;
+}
+
+#loginWrap > h2 {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 6rem;
+}
+#welcomeWrap > div {
+    margin: 2rem auto;
+    font-size: 3rem;
+}
+#welcomeWrap > a {
+    font-size: 4rem;
+}
+#welcomeWrap > h2 {
+    font-size: 3rem;
+}
+
+#loginfrm > * {
+    width: 70%;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+#loginfrm > span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.6rem;
+}

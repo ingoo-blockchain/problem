@@ -1,0 +1,218 @@
+{% extends 'layout/layout.html'%} {% block content %}
+
+<body style="list-style: none">
+    <div style="width: 80%; margin: 0 auto">
+        <div>
+            <h1
+                style="
+                    margin: 80px auto 20px auto;
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 5rem;
+                "
+            >
+                백종환 이민수 조
+            </h1>
+        </div>
+        <div style="float: right">
+            <ul style="padding-left: 20px">
+                <li style="list-style: none; font-size: 1.6rem">
+                    프로젝트 기간 : 2023년 1월 20일 <br />
+                </li>
+                <br />
+                <li style="list-style: none; font-size: 1.6rem">
+                    프로젝트 팀원 : 이민수(Back-end), 백종환(Front-end)
+                </li>
+            </ul>
+        </div>
+        <h3 style="font-size: 3rem; clear: both; margin-bottom: 1.5rem">
+            Front Server
+        </h3>
+        <blockquote data-ke-style="style1">
+            <p data-ke-size="size24">
+                <span style="font-family: 'Noto Serif KR'"
+                    ><p>
+                        <a
+                            href="http://127.0.0.1:3005"
+                            style="font-size: 1.6rem"
+                            >http://127.0.0.1:3005</a
+                        >
+                    </p>
+                </span>
+            </p>
+        </blockquote>
+        <h3 style="font-size: 3rem; margin: 3rem 0 1.5rem 0">Back Server</h3>
+        <blockquote data-ke-style="style1">
+            <p data-ke-size="size24">
+                <span style="font-family: 'Noto Serif KR'"
+                    ><p>
+                        <a
+                            href="http://127.0.0.1:3000"
+                            style="font-size: 1.6rem"
+                            >http://127.0.0.1:3000</a
+                        >
+                    </p>
+                </span>
+            </p>
+        </blockquote>
+        <br />
+        <br />
+        <br />
+        <h1 style="font-size: 3rem">BASIC</h1>
+        <table
+            style="
+                width: 70vw;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 2rem;
+            "
+        >
+            <thead>
+                <tr style="background-color: darkgray">
+                    <th style="width: 20%">Method</th>
+                    <th style="width: 20%">routes</th>
+                    <th style="width: 25%">이름</th>
+                    <th style="width: 35%">설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/</td>
+                    <td>메인페이지</td>
+                    <td>메인페이지 이동</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/about</td>
+                    <td>About페이지</td>
+                    <td>About페이지 이동</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/signin</td>
+                    <td>로그인페이지</td>
+                    <td>로그인페이지 이동</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/welcome</td>
+                    <td>로그인 성공 페이지</td>
+                    <td>로그인에 성공하면 보여지는 페이지</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/signup</td>
+                    <td>회원가입페이지</td>
+                    <td>회원가입페이지 이동</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/oauth/kakao</td>
+                    <td>카카오로그인</td>
+                    <td>카카오로그인 하기</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <br />
+        <h1 style="font-size: 3rem">AXIOS</h1>
+        <blockquote data-ke-style="style1">
+            <p data-ke-size="size16">
+                <span style="font-family: 'Noto Serif KR'"
+                    ><p>
+                        <br />
+                        <a href="http://127.0.0.1:3000" style="font-size: 2rem"
+                            >http://127.0.0.1:3000</a
+                        >
+                    </p>
+                </span>
+            </p>
+        </blockquote>
+        <table
+            style="
+                width: 70vw;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 2rem;
+            "
+        >
+            <thead>
+                <tr style="background-color: darkgray">
+                    <th style="width: 20%">Method</th>
+                    <th style="width: 20%">routes</th>
+                    <th style="width: 25%">이름</th>
+                    <th style="width: 35%">설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/users</td>
+                    <td>프로필확인</td>
+                    <td>토큰을 같이 보낸다</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>POST</td>
+                    <td>/users</td>
+                    <td>회원가입</td>
+                    <td>회원가입</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>PUT</td>
+                    <td>/users</td>
+                    <td>회원정보수정</td>
+                    <td>회원 정보 수정</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <table
+            style="
+                width: 70vw;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 2rem;
+            "
+        >
+            <thead>
+                <tr style="background-color: darkgray">
+                    <th style="width: 20%">Method</th>
+                    <th style="width: 20%">routes</th>
+                    <th style="width: 25%">이름</th>
+                    <th style="width: 35%">설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/check/?userid</td>
+                    <td>아이디확인</td>
+                    <td>아이디 중복확인</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>GET</td>
+                    <td>/check/?nickname</td>
+                    <td>닉네임</td>
+                    <td>닉네임 중복확인</td>
+                </tr>
+                <tr style="background-color: rgb(225, 225, 225)">
+                    <td>POST</td>
+                    <td>/check/auth</td>
+                    <td>로그인</td>
+                    <td>로그인시 토큰를 받기위해 백서버로 데이터 보냄</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <br />
+        <h1 style="font-size: 3rem">USER TABLE</h1>
+        <p><img src="/img/table.png" alt="img" style="width: 400px" /></p>
+    </div>
+</body>
+
+{% endblock %}

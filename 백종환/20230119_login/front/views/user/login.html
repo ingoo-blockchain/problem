@@ -1,0 +1,24 @@
+{% extends 'layout/layout.html'%} {% block content %}
+<div id="loginWrap" class="w120">
+    <h2>Login 페이지</h2>
+    <form id="loginfrm" name="loginfrm">
+        <input
+            type="text"
+            name="userid"
+            id="userid"
+            placeholder="아이디"
+            class="btnpadding"
+        />
+        <input
+            type="password"
+            name="userpw"
+            id="userpw"
+            placeholder="패스워드"
+            class="btnpadding"
+        />
+        <button type="submit">로그인</button>
+        <span>아직 회원이 아니라면?<a href="/signup">회원가입</a></span>
+    </form>
+</div>
+<script src="/js/module/login.js" type="module"></script>
+{% endblock %}
